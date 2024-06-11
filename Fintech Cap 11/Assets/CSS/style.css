@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(315deg,
+            hsl(218deg 78% 15%) 0%,
+            hsl(218deg 80% 18%) 8%,
+            hsl(218deg 80% 21%) 16%,
+            hsl(218deg 78% 25%) 24%,
+            hsl(236deg 39% 28%) 33%,
+            hsl(252deg 31% 25%) 41%,
+            hsl(265deg 23% 22%) 50%,
+            hsl(253deg 33% 32%) 59%,
+            hsl(239deg 39% 43%) 67%,
+            hsl(223deg 66% 47%) 76%,
+            hsl(229deg 62% 38%) 84%,
+            hsl(235deg 62% 29%) 92%,
+            hsl(241deg 71% 19%) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E0E0E0;
+}
+
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-image: linear-gradient(315deg,
+            hsl(267deg 14% 12%) 0%,
+            hsl(266deg 16% 13%) 9%,
+            hsl(265deg 17% 13%) 17%,
+            hsl(264deg 19% 13%) 27%,
+            hsl(263deg 20% 14%) 36%,
+            hsl(264deg 21% 16%) 45%,
+            hsl(264deg 22% 19%) 55%,
+            hsl(265deg 23% 21%) 64%,
+            hsl(266deg 20% 26%) 74%,
+            hsl(267deg 16% 33%) 83%,
+            hsl(267deg 13% 41%) 92%,
+            hsl(268deg 11% 48%) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #272636;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1F1B24;
+    border-radius: 10px;
+}
+
+.login-form h1 {
+    text-align: center;
+}
+
+.login-form label {
+    text-align: left;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b58;
+    color: #E0E0E0;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #5c5c7a;
+}
+
+button[type="submit"]:hover {
+    background-color: #434365;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1F1B24;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.records-table {
+    overflow-x: auto;
+}
+
+.records-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.records-table th,
+.records-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3b3b58;
+}
+
+.records-table th {
+    background-color: #2b2b3a;
+}
+
+.records-table td {
+    background-color: #1F1B24;
+}
+
+.records-table tbody tr:nth-child(even) {
+    background-color: #2b2b3a;
+}
