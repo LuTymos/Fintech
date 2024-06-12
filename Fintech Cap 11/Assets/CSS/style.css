@@ -18,8 +18,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #E0E0E0;
+    animation: fadeIn 1s ease;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .sidebar {
     width: 220px;
@@ -70,11 +80,9 @@ body {
     padding: 20px;
 }
 
-
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-
 }
 
 .login-form {
@@ -83,6 +91,8 @@ h1 {
     padding: 20px;
     background-color: #1F1B24;
     border-radius: 10px;
+    position: relative;
+    /* Adicionado */
 }
 
 .login-form h1 {
@@ -93,6 +103,169 @@ h1 {
     text-align: left;
 }
 
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b58;
+    color: #E0E0E0;
+}
+
+.login-form button[type="submit"] {
+    cursor: pointer;
+    background-color: #5c5c7a;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #434365;
+}
+
+.login-form {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cadastro form */
+
+.cadastro-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1F1B24;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.cadastro-form h1 {
+    text-align: center;
+}
+
+.cadastro-form label {
+    text-align: left;
+}
+
+.cadastro-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    margin-bottom: 8px;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"],
+.cadastro-form button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b58;
+    color: #E0E0E0;
+}
+
+.cadastro-form button[type="submit"] {
+    cursor: pointer;
+    background-color: #5c5c7a;
+}
+
+.cadastro-form button[type="submit"]:hover {
+    background-color: #434365;
+}
+
+
+.signup-forgot {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-forgot p {
+    margin: 5px 0;
+}
+
+.signup-forgot a {
+    color: #fff;
+}
+
+.signup-forgot a:hover {
+    text-decoration: underline;
+}
+
+.record-content {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #1F1B24;
+    animation: fadeIn 0.5s ease;
+    /* Adicionando animação de fade in */
+}
+
+.record-content input,
+.record-content select {
+    background-color: #3b3b58;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.record-content button {
+    margin-top: 20px;
+}
+
+.settings-content {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #1F1B24;
+    animation: fadeIn 0.5s ease;
+    /* Adicionando animação de fade in */
+}
+
+.settings-content input,
+.settings-content select {
+    background-color: #3b3b58;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.settings-content button {
+
+    margin-top: 20px;
+}
 
 form {
     display: flex;
@@ -162,4 +335,70 @@ button[type="submit"]:hover {
 
 .records-table tbody tr:nth-child(even) {
     background-color: #2b2b3a;
+}
+
+.bank-account-form,
+.transaction-form,
+.card-registration-form {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #1F1B24;
+
+}
+
+.bank-account-form input,
+.bank-account-form select,
+.transaction-form input,
+.transaction-form select,
+.card-registration-form input,
+.card-registration-form select {
+    background-color: #3b3b58;
+    color: #fff;
+}
+
+.bank-account-form input,
+.bank-account-form select,
+.transaction-form input,
+.transaction-form select,
+.card-registration-form input,
+.card-registration-form select {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.bank-account-form button,
+.transaction-form button,
+.card-registration-form button {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .record-content,
+    .settings-content,
+    .login-form,
+    .bank-account-form,
+    .transaction-form,
+    .card-registration-form {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

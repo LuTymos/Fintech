@@ -1,12 +1,11 @@
-<!-- settings.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuração</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastrar Cartão</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
 </head>
 
 <body>
@@ -21,24 +20,20 @@
             <li><a href="settings.html">Configuração</a></li>
         </ul>
     </div>
-    <div class="settings-content">
-        <h1>Configuração</h1>
+    <div class="card-registration-form">
+        <h1>Cadastrar Cartão</h1>
         <form>
-            <label for="currency">Moeda:</label>
-            <select id="currency" name="currency">
-                <option value="BRL">Real Brasileiro (BRL)</option>
-                <option value="USD">Dólar Americano (USD)</option>
-                <option value="EUR">Euro (EUR)</option>
-                <!-- Adicione mais opções de moeda conforme necessário -->
-            </select>
+            <label for="card-name">Nome do Cartão:</label>
+            <input type="text" id="card-name" name="card-name" required>
 
-            <label for="language">Idioma:</label>
-            <select id="language" name="language">
-                <option value="pt">Português</option>
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
-                <!-- Adicione mais opções de idioma conforme necessário -->
-            </select>
+            <label for="card-number">Número do Cartão:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Data de Validade:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
 
             <button type="submit">Salvar</button>
         </form>
@@ -162,7 +157,7 @@
 
     </script>
 
-    <script src="js/main.js"></script>
+    <script src="/Assets/js/main.js"></script>
 </body>
 
 </html>
